@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rutgers Origami Club</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Minimal styles for the carousel */
+    .carousel-item { display: none; }
+    .carousel-item.active { display: block; }
+  </style>
+</head>
+<body class="bg-[url('.//Images/bg.png')] bg-cover bg-center text-gray-900 scroll-smooth">
+  <!-- Navigation Bar -->
+  <nav class="bg-gray-800 bg-opacity-75 fixed w-full z-10 top-0 shadow-lg">
+    <div class="container mx-auto px-4">
+      <div class="flex items-center justify-between h-16">
+        <a href="#" class="text-white text-xl font-bold hover:scale-105 transition-transform duration-200">
+          Rutgers Origami Club
+        </a>
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex space-x-6">
+          <a href="#about" class="text-gray-300 hover:text-white hover:scale-105 transition-transform duration-200">About</a>
+          <a href="#gallery" class="text-gray-300 hover:text-white hover:scale-105 transition-transform duration-200">Gallery</a>
+          <a href="#contact" class="text-gray-300 hover:text-white hover:scale-105 transition-transform duration-200">Contact</a>
+        </div>
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden">
+          <button id="menu-toggle" class="text-gray-300 hover:text-white focus:outline-none">
+            <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+              <path fill-rule="evenodd" d="M4 5h16M4 12h16M4 19h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden">
+      <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+        <a href="#about" class="block text-gray-300 hover:text-white hover:scale-105 transition-transform duration-200">About</a>
+        <a href="#gallery" class="block text-gray-300 hover:text-white hover:scale-105 transition-transform duration-200">Gallery</a>
+        <a href="#contact" class="block text-gray-300 hover:text-white hover:scale-105 transition-transform duration-200">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content Container -->
+  <div class="container mx-auto px-4 pt-20">
+    <!-- About Section -->
+    <section id="about" class="my-8 bg-white bg-opacity-75 p-4 rounded shadow">
+      <h2 class="text-3xl font-bold mb-4">About</h2>
+      <p class="text-lg">Rutgers Origami Club</p>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="my-8 bg-white bg-opacity-75 p-4 rounded shadow">
+      <h2 class="text-3xl font-bold mb-4">Gallery</h2>
+      <!-- Carousel Container - Taller Height -->
+      <div class="relative mx-auto w-full max-w-6xl h-[650px] overflow-hidden">
+        <div id="carousel" class="relative w-full h-full">
+          <!-- Carousel Items -->
+          <div class="carousel-item active absolute inset-0">
+            <img src="/Images/1.jpg" alt="Image 1" class="w-full h-full object-cover">
+          </div>
+          <div class="carousel-item absolute inset-0">
+            <img src="/Images/2.jpg" alt="Image 2" class="w-full h-full object-cover">
+          </div>
+          <div class="carousel-item absolute inset-0">
+            <img src="/Images/3.jpg" alt="Image 3" class="w-full h-full object-cover">
+          </div>
+          <div class="carousel-item absolute inset-0">
+            <img src="/Images/4.jpg" alt="Image 4" class="w-full h-full object-cover">
+          </div>
+          <div class="carousel-item absolute inset-0">
+            <img src="/Images/5.jpg" alt="Image 4" class="w-full h-full object-cover">
+          </div>
+          <div class="carousel-item absolute inset-0">
+            <img src="/Images/6.jpg" alt="Image 4" class="w-full h-full object-cover">
+          </div>
+          <div class="carousel-item absolute inset-0">
+            <img src="/Images/7.jpg" alt="Image 4" class="w-full h-full object-cover">
+          </div>
+          <div class="carousel-item absolute inset-0">
+            <img src="/Images/8.jpg" alt="Image 4" class="w-full h-full object-cover">
+          </div>
+          <div class="carousel-item absolute inset-0">
+            <img src="/Images/9.jpg" alt="Image 4" class="w-full h-full object-cover">
+          </div>
+          <div class="carousel-item absolute inset-0">
+            <img src="/Images/10.jpg" alt="Image 4" class="w-full h-full object-cover">
+          </div>
+          <div class="carousel-item absolute inset-0">
+            <img src="/Images/11.jpg" alt="Image 4" class="w-full h-full object-cover">
+          </div>
+          <div class="carousel-item absolute inset-0">
+            <img src="/Images/12.jpg" alt="Image 4" class="w-full h-full object-cover">
+          </div>
+          <div class="carousel-item absolute inset-0">
+            <img src="/Images/13.jpg" alt="Image 4" class="w-full h-full object-cover">
+          </div>
+          <div class="carousel-item absolute inset-0">
+            <img src="/Images/14.jpg" alt="Image 4" class="w-full h-full object-cover">
+          </div>
+          <div class="carousel-item absolute inset-0">
+            <img src="/Images/15.jpg" alt="Image 4" class="w-full h-full object-cover">
+          </div>
+          <div class="carousel-item absolute inset-0">
+            <img src="/Images/16.jpg" alt="Image 4" class="w-full h-full object-cover">
+          </div>
+          <div class="carousel-item absolute inset-0">
+            <img src="/Images/17.jpg" alt="Image 4" class="w-full h-full object-cover">
+          </div>
+          <div class="carousel-item absolute inset-0">
+            <img src="/Images/18.jpg" alt="Image 4" class="w-full h-full object-cover">
+          </div>
+          <div class="carousel-item absolute inset-0">
+            <img src="/Images/19.jpg" alt="Image 4" class="w-full h-full object-cover">
+          </div>
+          <div class="carousel-item absolute inset-0">
+            <img src="/Images/20.jpg" alt="Image 4" class="w-full h-full object-cover">
+          </div>
+
+        </div>
+        <!-- Carousel Controls -->
+        <button id="prev" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-700 bg-opacity-50 text-white p-4 hover:bg-opacity-75 text-xl">
+          &lt;
+        </button>
+        <button id="next" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-700 bg-opacity-50 text-white p-4 hover:bg-opacity-75 text-xl">
+          &gt;
+        </button>
+      </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact" class="my-8 bg-white bg-opacity-75 p-4 rounded shadow">
+      <h3 class="text-2xl font-bold text-center mb-6">Contact Us</h3>
+      <form class="max-w-lg mx-auto bg-white p-6 rounded shadow">
+        <div class="mb-4">
+          <label class="block text-gray-700 mb-2" for="name">Name</label>
+          <input type="text" id="name" class="w-full border border-gray-300 p-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-600">
+        </div>
+        <div class="mb-4">
+          <label class="block text-gray-700 mb-2" for="email">Email</label>
+          <input type="email" id="email" class="w-full border border-gray-300 p-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-600">
+        </div>
+        <div class="mb-4">
+          <label class="block text-gray-700 mb-2" for="message">Message</label>
+          <textarea id="message" rows="4" class="w-full border border-gray-300 p-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-600"></textarea>
+        </div>
+        <button type="submit" class="w-full bg-blue-600 text-white p-2 rounded hover:bg-blue-700 transition duration-200">
+          Send Message
+        </button>
+      </form>
+    </section>
+  </div>
+
+  <!-- Scripts -->
+  <script>
+    // Mobile menu toggle
+    document.getElementById('menu-toggle').addEventListener('click', function() {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+
+    // Simple Carousel functionality
+    const carouselItems = document.querySelectorAll('.carousel-item');
+    let currentIndex = 0;
+    document.getElementById('next').addEventListener('click', () => {
+      carouselItems[currentIndex].classList.remove('active');
+      currentIndex = (currentIndex + 1) % carouselItems.length;
+      carouselItems[currentIndex].classList.add('active');
+    });
+    document.getElementById('prev').addEventListener('click', () => {
+      carouselItems[currentIndex].classList.remove('active');
+      currentIndex = (currentIndex - 1 + carouselItems.length) % carouselItems.length;
+      carouselItems[currentIndex].classList.add('active');
+    });
+  </script>
+</body>
+</html>
